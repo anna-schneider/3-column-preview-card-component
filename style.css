@@ -1,0 +1,110 @@
+/* 
+Orange rgb: 213, 138, 61
+Teal rgb: 44 103 112
+Green rgb: 24 63 63 */
+
+:root {
+  --ff-primary: 'Lexend Deca', sans-serif;
+  --ff-header: 'Big Shoulders Display', sans-serif;
+
+  --fw-reg: 400;
+  --fw-bold: 700;
+  
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+  --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --clr-very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+  background: var(--clr-very-light-gray);
+  color: var(--clr-very-light-gray);
+  font-size: var(--fs-body)x;
+  font-family: var(--ff-primary);
+}
+
+
+/* LAYOUT */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+}
+
+.flex-card {
+  max-width: 210px;
+  min-height: 400px;
+  padding: 80px 30px 0 40px;
+}
+
+.car-text {
+  font-size: 15px;
+  font-family: var(--ff-primary);
+  color: var(--clr-transparent-white);
+  line-height: 1.6;
+}
+
+h2 {
+  font-family: var(--ff-header);
+  font-size: 35px;
+}
+
+.sedan {
+  background-color: rgb(213, 138, 61);
+}
+
+.suvs {
+  background-color: rgb(44, 103, 112);
+}
+
+.luxury {
+  background-color: rgb(24, 63, 63);
+}
+
+@media (max-width: 740px) {
+  .flex-container {
+      flex-direction: column;
+  }
+
+  .content-container {
+      height: auto;
+  }
+}
+
+.btn {
+border-radius: 30px;
+height: 35px;
+width: 135px;
+outline: none;
+border: none;
+background-color: var(--clr-very-light-gray);
+box-shadow: var(--clr-very-light-gray) 0 0 0 2px;
+margin-top: 35px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  
+  
+}
+
+.sedan-btn {
+  color: rgb(213, 138, 61)
+}
+
+.suv-btn {
+  color: rgb(44, 103, 112)
+}
+
+.luxury-btn {
+  color: rgb(24, 63, 63)
+}
